@@ -1,11 +1,8 @@
 <div align="center">
 
-<h2>An Invariant Latent Space Perspective on Inversion Attack to Large Language Models</h2>
-<img src="assets/framework.png" width="100%"/>
+<h2>Test</h2>
 </div>
 
-## Overview
-This repository contains the implementation of the **Invariant Inverse Attacker** ($\text{Inv}^2\text{A}$), a novel framework designed to reconstruct sensitive input prompts from model outputs in large language models (LLMs). 
 
 ## Preliminary
 
@@ -17,7 +14,7 @@ This repository contains the implementation of the **Invariant Inverse Attacker*
 pip install -e .
 ```
 
-## Training of $\text{INV}^\text{2}\text{A}$
+## Training
 
 To train the model with the same hyperparameters as in the paper, run the following command (We take `alpaca` dataset as example):
 
@@ -35,7 +32,7 @@ deepspeed --include localhost:0 train.py \
     --seed 42    
 ```
 
-## Inference of $\text{INV}^\text{2}\text{A}$
+## Inference
 To run prompt inversion inference with our inversion model, run the following command (We take `alpaca` dataset as example):
 ```bash
 python inference.py \
